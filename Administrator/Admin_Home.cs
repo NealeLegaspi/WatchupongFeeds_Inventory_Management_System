@@ -1,4 +1,4 @@
-namespace WatchupongFeeds_Inventory_Management_System
+namespace Administrator
 {
     public partial class Form1 : Form
     {
