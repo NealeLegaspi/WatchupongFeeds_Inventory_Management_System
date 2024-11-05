@@ -44,7 +44,7 @@
             // txtUsername
             // 
             txtUsername.Font = new Font("Segoe UI", 16F);
-            txtUsername.Location = new Point(751, 381);
+            txtUsername.Location = new Point(751, 416);
             txtUsername.Multiline = true;
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(525, 40);
@@ -53,7 +53,7 @@
             // txtPassword
             // 
             txtPassword.Font = new Font("Segoe UI", 16F);
-            txtPassword.Location = new Point(751, 472);
+            txtPassword.Location = new Point(751, 507);
             txtPassword.Multiline = true;
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(525, 40);
@@ -64,7 +64,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(751, 357);
+            label1.Location = new Point(751, 392);
             label1.Name = "label1";
             label1.Size = new Size(84, 21);
             label1.TabIndex = 2;
@@ -75,7 +75,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(751, 448);
+            label2.Location = new Point(751, 483);
             label2.Name = "label2";
             label2.Size = new Size(79, 21);
             label2.TabIndex = 3;
@@ -85,7 +85,7 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.White;
-            label3.Location = new Point(751, 524);
+            label3.Location = new Point(751, 559);
             label3.Name = "label3";
             label3.Size = new Size(100, 15);
             label3.TabIndex = 4;
@@ -94,7 +94,7 @@
             // btnLogin
             // 
             btnLogin.Font = new Font("Segoe UI", 12F);
-            btnLogin.Location = new Point(947, 585);
+            btnLogin.Location = new Point(947, 573);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(128, 39);
             btnLogin.TabIndex = 5;
@@ -106,7 +106,7 @@
             // 
             pictureBox1.BackColor = Color.Black;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 163);
+            pictureBox1.Location = new Point(24, 154);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(641, 461);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -116,7 +116,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(910, 93);
+            pictureBox2.Location = new Point(909, 131);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(199, 162);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;

@@ -22,10 +22,9 @@ namespace Cashier
             product.Show();
             this.Hide();
         }
-
-        private void btnAccount_Click(object sender, EventArgs e)
+        private void btnAccount_Click_1(object sender, EventArgs e)
         {
-           Account account = new Account();
+            Account account = new Account();
             account.Show();
             this.Hide();
         }

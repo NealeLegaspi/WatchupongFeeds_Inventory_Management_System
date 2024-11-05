@@ -38,6 +38,8 @@
             dataGridView1 = new DataGridView();
             btnHome = new Button();
             btnProduct = new Button();
+            btnAccount = new Button();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -78,7 +80,7 @@
             // 
             pictureBox3.BackColor = Color.Black;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(76, 114);
+            pictureBox3.Location = new Point(101, 123);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(93, 81);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -91,7 +93,7 @@
             label2.BackColor = Color.Black;
             label2.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(76, 207);
+            label2.Location = new Point(101, 216);
             label2.Name = "label2";
             label2.Size = new Size(93, 25);
             label2.TabIndex = 9;
@@ -103,7 +105,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.ControlText;
-            label3.Location = new Point(292, 79);
+            label3.Location = new Point(292, 92);
             label3.Name = "label3";
             label3.Size = new Size(97, 33);
             label3.TabIndex = 16;
@@ -148,11 +150,40 @@
             btnProduct.UseVisualStyleBackColor = false;
             btnProduct.Click += btnProduct_Click;
             // 
+            // btnAccount
+            // 
+            btnAccount.BackColor = SystemColors.ControlText;
+            btnAccount.FlatStyle = FlatStyle.Popup;
+            btnAccount.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAccount.ForeColor = Color.White;
+            btnAccount.Image = (Image)resources.GetObject("btnAccount.Image");
+            btnAccount.ImageAlign = ContentAlignment.MiddleLeft;
+            btnAccount.Location = new Point(12, 475);
+            btnAccount.Name = "btnAccount";
+            btnAccount.Size = new Size(256, 70);
+            btnAccount.TabIndex = 29;
+            btnAccount.Text = "Account";
+            btnAccount.UseVisualStyleBackColor = false;
+            btnAccount.Click += btnAccount_Click_1;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = SystemColors.ControlText;
+            label4.Location = new Point(324, 171);
+            label4.Name = "label4";
+            label4.Size = new Size(0, 33);
+            label4.TabIndex = 30;
+            // 
             // Cashier_Home
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1370, 749);
+            Controls.Add(label4);
+            Controls.Add(btnAccount);
             Controls.Add(btnProduct);
             Controls.Add(btnHome);
             Controls.Add(dataGridView1);
@@ -183,5 +214,7 @@
         private DataGridView dataGridView1;
         private Button btnHome;
         private Button btnProduct;
+        private Button btnAccount;
+        private Label label4;
     }
 }
