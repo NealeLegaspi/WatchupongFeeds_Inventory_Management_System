@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,17 +11,19 @@ using System.Windows.Forms;
 
 namespace Administrator
 {
-    public partial class Admin_Inventory : Form
+    public partial class ProductList : UserControl
     {
-        public Admin_Inventory()
+        public ProductList()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+       
+
+        private void button1_Click(object sender, EventArgs e)
         {
-            ProductList pd = new ProductList();
-            pd.Show();
+            Admin_Inventory INV = new Admin_Inventory();
+            INV.Show();
             this.Hide();
         }
     }

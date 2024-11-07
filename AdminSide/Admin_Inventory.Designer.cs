@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            button1 = new Button();
-            label1 = new Label();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
@@ -40,6 +38,8 @@
             Column7 = new DataGridViewTextBoxColumn();
             Column8 = new DataGridViewTextBoxColumn();
             Column9 = new DataGridViewTextBoxColumn();
+            button1 = new Button();
+            label1 = new Label();
             textBox1 = new TextBox();
             button2 = new Button();
             button3 = new Button();
@@ -56,30 +56,6 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(1023, 429);
             dataGridView1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.Black;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Transparent;
-            button1.Location = new Point(50, 108);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 33);
-            button1.TabIndex = 1;
-            button1.Text = "Stock";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(50, 56);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(126, 32);
-            label1.TabIndex = 2;
-            label1.Text = "Inventory";
             // 
             // Column1
             // 
@@ -135,6 +111,30 @@
             Column9.HeaderText = "Actions";
             Column9.Name = "Column9";
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Black;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.Transparent;
+            button1.Location = new Point(50, 108);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 33);
+            button1.TabIndex = 1;
+            button1.Text = "Stock";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(50, 56);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(126, 32);
+            label1.TabIndex = 2;
+            label1.Text = "Inventory";
+            // 
             // textBox1
             // 
             textBox1.BackColor = Color.Lime;
@@ -146,16 +146,17 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.Black;
+            button2.BackColor = Color.White;
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.Transparent;
+            button2.ForeColor = Color.Black;
             button2.Location = new Point(141, 108);
             button2.Name = "button2";
             button2.Size = new Size(104, 33);
             button2.TabIndex = 6;
             button2.Text = "Product List";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
