@@ -55,7 +55,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(159, -1);
+            label1.Location = new Point(243, 9);
             label1.Name = "label1";
             label1.Size = new Size(107, 37);
             label1.TabIndex = 1;
@@ -64,61 +64,61 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 20F);
-            label2.Location = new Point(9, 110);
+            label2.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(22, 130);
             label2.Name = "label2";
-            label2.Size = new Size(204, 37);
+            label2.Size = new Size(213, 37);
             label2.TabIndex = 2;
             label2.Text = "Account Name: ";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 20F);
-            label3.Location = new Point(12, 254);
+            label3.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(25, 274);
             label3.Name = "label3";
-            label3.Size = new Size(118, 37);
+            label3.Size = new Size(124, 37);
             label3.TabIndex = 3;
             label3.Text = "Amount:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 20F);
-            label4.Location = new Point(12, 183);
+            label4.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(25, 203);
             label4.Name = "label4";
-            label4.Size = new Size(169, 37);
+            label4.Size = new Size(177, 37);
             label4.TabIndex = 4;
             label4.Text = "Account No: ";
             // 
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 14F);
-            textBox1.Location = new Point(219, 115);
+            textBox1.Location = new Point(232, 135);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(175, 32);
+            textBox1.Size = new Size(310, 32);
             textBox1.TabIndex = 5;
             // 
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI", 14F);
-            textBox2.Location = new Point(219, 188);
+            textBox2.Location = new Point(232, 208);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(175, 32);
+            textBox2.Size = new Size(310, 32);
             textBox2.TabIndex = 6;
             // 
             // textBox3
             // 
             textBox3.Font = new Font("Segoe UI", 14F);
-            textBox3.Location = new Point(219, 259);
+            textBox3.Location = new Point(232, 279);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(175, 32);
+            textBox3.Size = new Size(310, 32);
             textBox3.TabIndex = 7;
             // 
             // button1
             // 
-            button1.Font = new Font("Segoe UI", 16F);
-            button1.Location = new Point(284, 341);
+            button1.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(432, 389);
             button1.Name = "button1";
             button1.Size = new Size(110, 41);
             button1.TabIndex = 8;
@@ -129,7 +129,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(427, 450);
+            ClientSize = new Size(595, 500);
             Controls.Add(button1);
             Controls.Add(textBox3);
             Controls.Add(textBox2);

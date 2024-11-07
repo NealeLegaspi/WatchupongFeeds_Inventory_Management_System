@@ -11,8 +11,9 @@ namespace WatchupongFeeds_Inventory_Management_System
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Cashier_Home cashier = new Cashier_Home();
-            cashier.Show();
+            UC_Cashier_Dashboard dashboardC = new UC_Cashier_Dashboard();
+            dashboardC.Show();
+            this.Hide();
         }
     }
 }
