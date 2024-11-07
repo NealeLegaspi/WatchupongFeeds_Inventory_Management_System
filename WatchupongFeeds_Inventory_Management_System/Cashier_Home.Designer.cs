@@ -44,18 +44,33 @@
             btnAccount = new Button();
             label4 = new Label();
             chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            dataGridView2 = new DataGridView();
             dataGridView3 = new DataGridView();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
+            label8 = new Label();
+            dataGridView2 = new DataGridView();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
+            Column6 = new DataGridViewTextBoxColumn();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column7 = new DataGridViewTextBoxColumn();
+            Column8 = new DataGridViewTextBoxColumn();
+            Column9 = new DataGridViewTextBoxColumn();
+            Column10 = new DataGridViewTextBoxColumn();
+            Column11 = new DataGridViewTextBoxColumn();
+            button1 = new Button();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)chart2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -82,11 +97,12 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Black;
-            pictureBox2.Location = new Point(12, 79);
+            pictureBox2.Location = new Point(0, 47);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(256, 633);
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox3
             // 
@@ -94,7 +110,7 @@
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(101, 123);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(93, 81);
+            pictureBox3.Size = new Size(80, 81);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 8;
             pictureBox3.TabStop = false;
@@ -126,6 +142,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column8, Column9, Column10, Column11 });
             dataGridView1.Location = new Point(657, 180);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
@@ -143,7 +160,7 @@
             btnHome.ImageAlign = ContentAlignment.MiddleLeft;
             btnHome.Location = new Point(12, 274);
             btnHome.Name = "btnHome";
-            btnHome.Size = new Size(256, 70);
+            btnHome.Size = new Size(244, 70);
             btnHome.TabIndex = 20;
             btnHome.Text = " Home";
             btnHome.UseVisualStyleBackColor = false;
@@ -158,7 +175,7 @@
             btnProduct.ImageAlign = ContentAlignment.MiddleLeft;
             btnProduct.Location = new Point(12, 376);
             btnProduct.Name = "btnProduct";
-            btnProduct.Size = new Size(256, 70);
+            btnProduct.Size = new Size(244, 70);
             btnProduct.TabIndex = 21;
             btnProduct.Text = "    Product";
             btnProduct.UseVisualStyleBackColor = false;
@@ -172,9 +189,9 @@
             btnAccount.ForeColor = Color.White;
             btnAccount.Image = (Image)resources.GetObject("btnAccount.Image");
             btnAccount.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAccount.Location = new Point(12, 475);
+            btnAccount.Location = new Point(12, 468);
             btnAccount.Name = "btnAccount";
-            btnAccount.Size = new Size(256, 70);
+            btnAccount.Size = new Size(239, 70);
             btnAccount.TabIndex = 29;
             btnAccount.Text = "Account";
             btnAccount.UseVisualStyleBackColor = false;
@@ -198,7 +215,7 @@
             legend1.Name = "Legend1";
             chart2.Legends.Add(legend1);
             chart2.Location = new Point(304, 180);
-            chart2.Margin = new Padding(2, 2, 2, 2);
+            chart2.Margin = new Padding(2);
             chart2.Name = "chart2";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -209,23 +226,14 @@
             chart2.Text = "chart2";
             chart2.Click += chart2_Click;
             // 
-            // dataGridView2
-            // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(304, 467);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.RowHeadersWidth = 62;
-            dataGridView2.Size = new Size(606, 116);
-            dataGridView2.TabIndex = 33;
-            dataGridView2.CellContentClick += dataGridView2_CellContentClick;
-            // 
             // dataGridView3
             // 
             dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView3.Location = new Point(934, 419);
+            dataGridView3.Columns.AddRange(new DataGridViewColumn[] { Column1, Column7 });
+            dataGridView3.Location = new Point(934, 405);
             dataGridView3.Name = "dataGridView3";
             dataGridView3.RowHeadersWidth = 62;
-            dataGridView3.Size = new Size(366, 176);
+            dataGridView3.Size = new Size(366, 228);
             dataGridView3.TabIndex = 34;
             // 
             // label5
@@ -234,7 +242,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.ControlText;
-            label5.Location = new Point(306, 154);
+            label5.Location = new Point(306, 150);
             label5.Name = "label5";
             label5.Size = new Size(131, 26);
             label5.TabIndex = 35;
@@ -259,22 +267,136 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = SystemColors.ControlText;
-            label7.Location = new Point(934, 394);
+            label7.Location = new Point(934, 376);
             label7.Name = "label7";
             label7.Size = new Size(159, 26);
             label7.TabIndex = 37;
             label7.Text = "Top Products ";
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = SystemColors.ControlText;
+            label8.Location = new Point(657, 150);
+            label8.Name = "label8";
+            label8.Size = new Size(147, 26);
+            label8.TabIndex = 38;
+            label8.Text = "Stock Status";
+            // 
+            // dataGridView2
+            // 
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { Column2, Column3, Column4, Column5, Column6 });
+            dataGridView2.Location = new Point(304, 468);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.Size = new Size(603, 157);
+            dataGridView2.TabIndex = 39;
+            // 
+            // Column2
+            // 
+            Column2.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column2.HeaderText = "Product Name";
+            Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "Product ID";
+            Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            Column4.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column4.HeaderText = "Qty.";
+            Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            Column5.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column5.HeaderText = "Price";
+            Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            Column6.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column6.HeaderText = "Date and Time";
+            Column6.Name = "Column6";
+            // 
+            // Column1
+            // 
+            Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column1.HeaderText = "Product ID";
+            Column1.Name = "Column1";
+            // 
+            // Column7
+            // 
+            Column7.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column7.HeaderText = "Product Name";
+            Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            Column8.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column8.HeaderText = "Product ID";
+            Column8.Name = "Column8";
+            // 
+            // Column9
+            // 
+            Column9.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column9.HeaderText = "Product Name";
+            Column9.Name = "Column9";
+            // 
+            // Column10
+            // 
+            Column10.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column10.HeaderText = "Stock";
+            Column10.Name = "Column10";
+            // 
+            // Column11
+            // 
+            Column11.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column11.HeaderText = "Stock Status";
+            Column11.Name = "Column11";
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ControlText;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(72, 544);
+            button1.Name = "button1";
+            button1.Size = new Size(179, 70);
+            button1.TabIndex = 40;
+            button1.Text = "Order History";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = SystemColors.ActiveCaptionText;
+            pictureBox4.Image = Properties.Resources.Time_Machine;
+            pictureBox4.Location = new Point(0, 547);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(80, 60);
+            pictureBox4.TabIndex = 41;
+            pictureBox4.TabStop = false;
+            // 
             // Cashier_Home
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(959, 449);
+            ClientSize = new Size(1362, 664);
+            Controls.Add(pictureBox4);
+            Controls.Add(button1);
+            Controls.Add(dataGridView2);
+            Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(dataGridView3);
-            Controls.Add(dataGridView2);
             Controls.Add(chart2);
             Controls.Add(label4);
             Controls.Add(btnAccount);
@@ -296,8 +418,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)chart2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -316,10 +439,24 @@
         private Button btnAccount;
         private Label label4;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
-        private DataGridView dataGridView2;
         private DataGridView dataGridView3;
         private Label label5;
         private Label label6;
         private Label label7;
+        private Label label8;
+        private DataGridView dataGridView2;
+        private DataGridViewTextBoxColumn Column8;
+        private DataGridViewTextBoxColumn Column9;
+        private DataGridViewTextBoxColumn Column10;
+        private DataGridViewTextBoxColumn Column11;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column7;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
+        private DataGridViewTextBoxColumn Column6;
+        private Button button1;
+        private PictureBox pictureBox4;
     }
 }
