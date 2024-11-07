@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdminSide;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,23 +11,18 @@ using System.Windows.Forms;
 
 namespace Administrator
 {
-    public partial class Admin_Inventory : Form
+    public partial class Edit_User : Form
     {
-        public Admin_Inventory()
+        public Edit_User()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            ProductList pd = new ProductList();
-            pd.Show();
+            UC_Admin_Dashboard uC_Admin_Dashboard = new UC_Admin_Dashboard();
+            uC_Admin_Dashboard.Show();
             this.Hide();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

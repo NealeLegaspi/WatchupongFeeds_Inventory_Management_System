@@ -32,8 +32,6 @@
             label1 = new Label();
             btnADDUSER = new Button();
             dataGridView1 = new DataGridView();
-            button1 = new Button();
-            button2 = new Button();
             NameAdmin = new DataGridViewTextBoxColumn();
             UsernameAdmin = new DataGridViewTextBoxColumn();
             emailAdmin = new DataGridViewTextBoxColumn();
@@ -43,6 +41,8 @@
             RoleAdmin = new DataGridViewTextBoxColumn();
             StatusAdmin = new DataGridViewTextBoxColumn();
             ActionAdmin = new DataGridViewTextBoxColumn();
+            button1 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -68,6 +68,7 @@
             btnADDUSER.TabIndex = 2;
             btnADDUSER.Text = "Add User";
             btnADDUSER.UseVisualStyleBackColor = false;
+            btnADDUSER.Click += btnADDUSER_Click;
             // 
             // dataGridView1
             // 
@@ -79,26 +80,6 @@
             dataGridView1.Size = new Size(1018, 478);
             dataGridView1.TabIndex = 3;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.Lime;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Location = new Point(948, 124);
-            button1.Name = "button1";
-            button1.Size = new Size(32, 20);
-            button1.TabIndex = 4;
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.Red;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Location = new Point(1002, 124);
-            button2.Name = "button2";
-            button2.Size = new Size(32, 20);
-            button2.TabIndex = 5;
-            button2.UseVisualStyleBackColor = false;
             // 
             // NameAdmin
             // 
@@ -152,6 +133,28 @@
             ActionAdmin.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             ActionAdmin.HeaderText = "Actions";
             ActionAdmin.Name = "ActionAdmin";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Lime;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Location = new Point(948, 124);
+            button1.Name = "button1";
+            button1.Size = new Size(32, 20);
+            button1.TabIndex = 4;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Red;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Location = new Point(1002, 124);
+            button2.Name = "button2";
+            button2.Size = new Size(32, 20);
+            button2.TabIndex = 5;
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // Admin_Account
             // 
