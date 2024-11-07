@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cashier_Home));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             pictureBox1 = new PictureBox();
             label1 = new Label();
             pictureBox2 = new PictureBox();
@@ -61,10 +61,9 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Black;
-            pictureBox1.Location = new Point(0, -2);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Location = new Point(0, -1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1957, 108);
+            pictureBox1.Size = new Size(1370, 65);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -74,20 +73,18 @@
             label1.BackColor = Color.Black;
             label1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(39, 32);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(27, 19);
             label1.Name = "label1";
-            label1.Size = new Size(274, 37);
+            label1.Size = new Size(182, 25);
             label1.TabIndex = 1;
             label1.Text = "WATCHUPONG ";
             // 
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Black;
-            pictureBox2.Location = new Point(17, 132);
-            pictureBox2.Margin = new Padding(4, 5, 4, 5);
+            pictureBox2.Location = new Point(12, 79);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(366, 1055);
+            pictureBox2.Size = new Size(256, 633);
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
             // 
@@ -95,10 +92,9 @@
             // 
             pictureBox3.BackColor = Color.Black;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(144, 205);
-            pictureBox3.Margin = new Padding(4, 5, 4, 5);
+            pictureBox3.Location = new Point(101, 123);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(133, 135);
+            pictureBox3.Size = new Size(93, 81);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 8;
             pictureBox3.TabStop = false;
@@ -109,10 +105,9 @@
             label2.BackColor = Color.Black;
             label2.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(144, 360);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(101, 216);
             label2.Name = "label2";
-            label2.Size = new Size(134, 37);
+            label2.Size = new Size(93, 25);
             label2.TabIndex = 9;
             label2.Text = "Cashier";
             // 
@@ -122,21 +117,19 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.ControlText;
-            label3.Location = new Point(417, 153);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(292, 92);
             label3.Name = "label3";
-            label3.Size = new Size(143, 52);
+            label3.Size = new Size(97, 33);
             label3.TabIndex = 16;
             label3.Text = "Home";
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(939, 300);
-            dataGridView1.Margin = new Padding(4, 5, 4, 5);
+            dataGridView1.Location = new Point(657, 180);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(919, 289);
+            dataGridView1.Size = new Size(643, 173);
             dataGridView1.TabIndex = 17;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -148,10 +141,9 @@
             btnHome.ForeColor = Color.White;
             btnHome.Image = (Image)resources.GetObject("btnHome.Image");
             btnHome.ImageAlign = ContentAlignment.MiddleLeft;
-            btnHome.Location = new Point(17, 457);
-            btnHome.Margin = new Padding(4, 5, 4, 5);
+            btnHome.Location = new Point(12, 274);
             btnHome.Name = "btnHome";
-            btnHome.Size = new Size(366, 117);
+            btnHome.Size = new Size(256, 70);
             btnHome.TabIndex = 20;
             btnHome.Text = " Home";
             btnHome.UseVisualStyleBackColor = false;
@@ -164,10 +156,9 @@
             btnProduct.ForeColor = Color.White;
             btnProduct.Image = (Image)resources.GetObject("btnProduct.Image");
             btnProduct.ImageAlign = ContentAlignment.MiddleLeft;
-            btnProduct.Location = new Point(17, 627);
-            btnProduct.Margin = new Padding(4, 5, 4, 5);
+            btnProduct.Location = new Point(12, 376);
             btnProduct.Name = "btnProduct";
-            btnProduct.Size = new Size(366, 117);
+            btnProduct.Size = new Size(256, 70);
             btnProduct.TabIndex = 21;
             btnProduct.Text = "    Product";
             btnProduct.UseVisualStyleBackColor = false;
@@ -181,10 +172,9 @@
             btnAccount.ForeColor = Color.White;
             btnAccount.Image = (Image)resources.GetObject("btnAccount.Image");
             btnAccount.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAccount.Location = new Point(17, 792);
-            btnAccount.Margin = new Padding(4, 5, 4, 5);
+            btnAccount.Location = new Point(12, 475);
             btnAccount.Name = "btnAccount";
-            btnAccount.Size = new Size(366, 117);
+            btnAccount.Size = new Size(256, 70);
             btnAccount.TabIndex = 29;
             btnAccount.Text = "Account";
             btnAccount.UseVisualStyleBackColor = false;
@@ -196,25 +186,25 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ControlText;
-            label4.Location = new Point(463, 285);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(324, 171);
             label4.Name = "label4";
-            label4.Size = new Size(0, 52);
+            label4.Size = new Size(0, 33);
             label4.TabIndex = 30;
             // 
             // chart2
             // 
-            chartArea5.Name = "ChartArea1";
-            chart2.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            chart2.Legends.Add(legend5);
-            chart2.Location = new Point(434, 300);
+            chartArea1.Name = "ChartArea1";
+            chart2.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            chart2.Legends.Add(legend1);
+            chart2.Location = new Point(304, 180);
+            chart2.Margin = new Padding(2, 2, 2, 2);
             chart2.Name = "chart2";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            chart2.Series.Add(series5);
-            chart2.Size = new Size(450, 374);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            chart2.Series.Add(series1);
+            chart2.Size = new Size(315, 224);
             chart2.TabIndex = 32;
             chart2.Text = "chart2";
             chart2.Click += chart2_Click;
@@ -222,22 +212,20 @@
             // dataGridView2
             // 
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(434, 778);
-            dataGridView2.Margin = new Padding(4, 5, 4, 5);
+            dataGridView2.Location = new Point(304, 467);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 62;
-            dataGridView2.Size = new Size(865, 193);
+            dataGridView2.Size = new Size(606, 116);
             dataGridView2.TabIndex = 33;
             dataGridView2.CellContentClick += dataGridView2_CellContentClick;
             // 
             // dataGridView3
             // 
             dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView3.Location = new Point(1335, 698);
-            dataGridView3.Margin = new Padding(4, 5, 4, 5);
+            dataGridView3.Location = new Point(934, 419);
             dataGridView3.Name = "dataGridView3";
             dataGridView3.RowHeadersWidth = 62;
-            dataGridView3.Size = new Size(523, 294);
+            dataGridView3.Size = new Size(366, 176);
             dataGridView3.TabIndex = 34;
             // 
             // label5
@@ -246,10 +234,9 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.ControlText;
-            label5.Location = new Point(437, 256);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(306, 154);
             label5.Name = "label5";
-            label5.Size = new Size(188, 37);
+            label5.Size = new Size(131, 26);
             label5.TabIndex = 35;
             label5.Text = "Total Sales";
             // 
@@ -259,10 +246,9 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = SystemColors.ControlText;
-            label6.Location = new Point(439, 731);
-            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Location = new Point(307, 439);
             label6.Name = "label6";
-            label6.Size = new Size(230, 37);
+            label6.Size = new Size(161, 26);
             label6.TabIndex = 36;
             label6.Text = "Order History ";
             label6.Click += label6_Click;
@@ -273,18 +259,17 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = SystemColors.ControlText;
-            label7.Location = new Point(1335, 656);
-            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Location = new Point(934, 394);
             label7.Name = "label7";
-            label7.Size = new Size(231, 37);
+            label7.Size = new Size(159, 26);
             label7.TabIndex = 37;
             label7.Text = "Top Products ";
             // 
             // Cashier_Home
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1924, 1050);
+            ClientSize = new Size(959, 449);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -302,7 +287,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
-            Margin = new Padding(4, 5, 4, 5);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Cashier_Home";
             Text = "WATCHUPONG";
             Load += Cashier_Home_Load;

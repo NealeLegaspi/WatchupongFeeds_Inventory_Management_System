@@ -34,10 +34,10 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            button1 = new Button();
+            txtAccountName = new TextBox();
+            txtAccountNo = new TextBox();
+            txtAmount = new TextBox();
+            btnPay = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -91,54 +91,55 @@
             label4.TabIndex = 4;
             label4.Text = "Account No: ";
             // 
-            // textBox1
+            // txtAccountName
             // 
-            textBox1.Font = new Font("Segoe UI", 14F);
-            textBox1.Location = new Point(232, 135);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(310, 32);
-            textBox1.TabIndex = 5;
+            txtAccountName.Font = new Font("Segoe UI", 14F);
+            txtAccountName.Location = new Point(232, 135);
+            txtAccountName.Name = "txtAccountName";
+            txtAccountName.Size = new Size(310, 32);
+            txtAccountName.TabIndex = 5;
             // 
-            // textBox2
+            // txtAccountNo
             // 
-            textBox2.Font = new Font("Segoe UI", 14F);
-            textBox2.Location = new Point(232, 208);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(310, 32);
-            textBox2.TabIndex = 6;
+            txtAccountNo.Font = new Font("Segoe UI", 14F);
+            txtAccountNo.Location = new Point(232, 208);
+            txtAccountNo.Name = "txtAccountNo";
+            txtAccountNo.Size = new Size(310, 32);
+            txtAccountNo.TabIndex = 6;
             // 
-            // textBox3
+            // txtAmount
             // 
-            textBox3.Font = new Font("Segoe UI", 14F);
-            textBox3.Location = new Point(232, 279);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(310, 32);
-            textBox3.TabIndex = 7;
+            txtAmount.Font = new Font("Segoe UI", 14F);
+            txtAmount.Location = new Point(232, 279);
+            txtAmount.Name = "txtAmount";
+            txtAmount.Size = new Size(310, 32);
+            txtAmount.TabIndex = 7;
             // 
-            // button1
+            // btnPay
             // 
-            button1.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(432, 389);
-            button1.Name = "button1";
-            button1.Size = new Size(110, 41);
-            button1.TabIndex = 8;
-            button1.Text = "Pay";
-            button1.UseVisualStyleBackColor = true;
+            btnPay.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPay.Location = new Point(432, 389);
+            btnPay.Name = "btnPay";
+            btnPay.Size = new Size(110, 41);
+            btnPay.TabIndex = 8;
+            btnPay.Text = "Pay";
+            btnPay.UseVisualStyleBackColor = true;
             // 
             // GCash
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(595, 500);
-            Controls.Add(button1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnPay);
+            Controls.Add(txtAmount);
+            Controls.Add(txtAccountNo);
+            Controls.Add(txtAccountName);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "GCash";
             Text = "GCash";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -153,9 +154,9 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private Button button1;
+        private TextBox txtAccountName;
+        private TextBox txtAccountNo;
+        private TextBox txtAmount;
+        private Button btnPay;
     }
 }

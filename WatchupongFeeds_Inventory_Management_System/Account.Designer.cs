@@ -39,7 +39,6 @@
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
             button4 = new Button();
-            button3 = new Button();
             button2 = new Button();
             button1 = new Button();
             label3 = new Label();
@@ -154,7 +153,6 @@
             // 
             panel1.BackColor = SystemColors.ActiveBorder;
             panel1.Controls.Add(button4);
-            panel1.Controls.Add(button3);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
             panel1.Location = new Point(383, 144);
@@ -165,21 +163,13 @@
             // button4
             // 
             button4.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(356, 390);
+            button4.Location = new Point(360, 389);
             button4.Name = "button4";
             button4.Size = new Size(128, 40);
             button4.TabIndex = 3;
             button4.Text = "Log Out";
             button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.White;
-            button3.Location = new Point(576, 88);
-            button3.Name = "button3";
-            button3.Size = new Size(188, 243);
-            button3.TabIndex = 2;
-            button3.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button2
             // 
@@ -187,7 +177,7 @@
             button2.Font = new Font("Segoe UI", 16F);
             button2.Image = (Image)resources.GetObject("button2.Image");
             button2.ImageAlign = ContentAlignment.TopCenter;
-            button2.Location = new Point(325, 88);
+            button2.Location = new Point(517, 84);
             button2.Name = "button2";
             button2.Size = new Size(188, 243);
             button2.TabIndex = 1;
@@ -198,7 +188,7 @@
             button1.BackColor = Color.White;
             button1.Image = (Image)resources.GetObject("button1.Image");
             button1.ImageAlign = ContentAlignment.TopCenter;
-            button1.Location = new Point(72, 88);
+            button1.Location = new Point(145, 84);
             button1.Name = "button1";
             button1.Size = new Size(188, 243);
             button1.TabIndex = 0;
@@ -247,6 +237,7 @@
             Controls.Add(label2);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Account";
             Text = "Account";
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -269,7 +260,6 @@
         private PictureBox pictureBox1;
         private Panel panel1;
         private Button button4;
-        private Button button3;
         private Button button2;
         private Button button1;
         private Label label3;

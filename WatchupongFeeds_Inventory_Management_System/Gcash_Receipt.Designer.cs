@@ -143,6 +143,7 @@
             Controls.Add(label1);
             Controls.Add(label2);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Gcash_Receipt";
             Text = "Gcash_Receipt";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WatchupongFeeds_Inventory_Management_System;
 
 namespace Cashier
 {
@@ -28,6 +29,13 @@ namespace Cashier
         {
             Cashier_Home home = new Cashier_Home();
             home.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Login logout = new Login();
+            logout.Show();
             this.Hide();
         }
     }
