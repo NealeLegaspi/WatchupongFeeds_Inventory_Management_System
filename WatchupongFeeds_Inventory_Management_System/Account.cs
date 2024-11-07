@@ -25,13 +25,6 @@ namespace Cashier
             this.Hide();
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            Cashier_Home home = new Cashier_Home();
-            home.Show();
-            this.Hide();
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
             Login logout = new Login();

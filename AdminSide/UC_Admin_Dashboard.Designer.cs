@@ -109,7 +109,7 @@
             button6.Name = "button6";
             button6.Size = new Size(222, 60);
             button6.TabIndex = 9;
-            button6.Text = "Logout";
+            button6.Text = "      Logout";
             button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
             // 
@@ -194,7 +194,7 @@
             button1.Name = "button1";
             button1.Size = new Size(251, 62);
             button1.TabIndex = 4;
-            button1.Text = "      Account";
+            button1.Text = "     Account";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 

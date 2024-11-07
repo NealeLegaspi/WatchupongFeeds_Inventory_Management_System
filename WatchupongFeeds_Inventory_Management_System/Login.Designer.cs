@@ -33,10 +33,11 @@
             txtPassword = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            label3 = new Label();
             btnLogin = new Button();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            label3 = new Label();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -81,16 +82,6 @@
             label2.TabIndex = 3;
             label2.Text = "Password:";
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(751, 559);
-            label3.Name = "label3";
-            label3.Size = new Size(100, 15);
-            label3.TabIndex = 4;
-            label3.Text = "Forgot Password?";
-            // 
             // btnLogin
             // 
             btnLogin.Font = new Font("Segoe UI", 12F);
@@ -123,12 +114,30 @@
             pictureBox2.TabIndex = 7;
             pictureBox2.TabStop = false;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(784, 561);
+            label3.Name = "label3";
+            label3.Size = new Size(89, 15);
+            label3.TabIndex = 4;
+            label3.Text = "Show Password";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(751, 558);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(29, 23);
+            textBox1.TabIndex = 8;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1370, 749);
+            Controls.Add(textBox1);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(btnLogin);
@@ -151,9 +160,10 @@
         private TextBox txtPassword;
         private Label label1;
         private Label label2;
-        private Label label3;
         private Button btnLogin;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private Label label3;
+        private TextBox textBox1;
     }
 }

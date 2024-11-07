@@ -38,12 +38,19 @@
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel2 = new Panel();
             MainPanelCashier = new Panel();
+            label1 = new Label();
+            pictureBox3 = new PictureBox();
+            label2 = new Label();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.Black;
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(pictureBox3);
+            panel1.Controls.Add(label1);
             panel1.Controls.Add(button6);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
@@ -80,7 +87,7 @@
             button2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
             button2.ImageAlign = ContentAlignment.TopLeft;
-            button2.Location = new Point(0, 488);
+            button2.Location = new Point(0, 521);
             button2.Name = "button2";
             button2.Size = new Size(251, 60);
             button2.TabIndex = 9;
@@ -97,9 +104,9 @@
             button1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
             button1.ImageAlign = ContentAlignment.TopLeft;
-            button1.Location = new Point(3, 392);
+            button1.Location = new Point(3, 425);
             button1.Name = "button1";
-            button1.Size = new Size(251, 60);
+            button1.Size = new Size(248, 60);
             button1.TabIndex = 8;
             button1.Text = "Account";
             button1.UseVisualStyleBackColor = false;
@@ -114,11 +121,11 @@
             button3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
             button3.ImageAlign = ContentAlignment.TopLeft;
-            button3.Location = new Point(-3, 293);
+            button3.Location = new Point(0, 335);
             button3.Name = "button3";
             button3.Size = new Size(251, 60);
             button3.TabIndex = 7;
-            button3.Text = "Product";
+            button3.Text = " Product";
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
@@ -131,7 +138,7 @@
             btnHomeAdmin.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnHomeAdmin.ForeColor = Color.White;
             btnHomeAdmin.ImageAlign = ContentAlignment.MiddleLeft;
-            btnHomeAdmin.Location = new Point(0, 199);
+            btnHomeAdmin.Location = new Point(3, 244);
             btnHomeAdmin.Name = "btnHomeAdmin";
             btnHomeAdmin.Size = new Size(248, 55);
             btnHomeAdmin.TabIndex = 4;
@@ -163,6 +170,41 @@
             MainPanelCashier.Size = new Size(1119, 649);
             MainPanelCashier.TabIndex = 3;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Black;
+            label1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(36, 31);
+            label1.Name = "label1";
+            label1.Size = new Size(182, 25);
+            label1.TabIndex = 11;
+            label1.Text = "WATCHUPONG ";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.Black;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(74, 97);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(93, 81);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 25;
+            pictureBox3.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Black;
+            label2.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(74, 181);
+            label2.Name = "label2";
+            label2.Size = new Size(93, 25);
+            label2.TabIndex = 26;
+            label2.Text = "Cashier";
+            // 
             // UC_Cashier_Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -175,6 +217,8 @@
             Name = "UC_Cashier_Dashboard";
             Text = "UC_Cashier_Dashboard";
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 
@@ -189,5 +233,8 @@
         private Button button2;
         private Button button1;
         private Button button6;
+        private Label label1;
+        private PictureBox pictureBox3;
+        private Label label2;
     }
 }

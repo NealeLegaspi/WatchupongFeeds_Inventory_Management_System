@@ -16,12 +16,6 @@ namespace Cashier
         {
             InitializeComponent();
         }
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            Cashier_Home home = new Cashier_Home();
-            home.Show();
-            this.Hide();
-        }
 
         private void btnAccount_Click(object sender, EventArgs e)
         {

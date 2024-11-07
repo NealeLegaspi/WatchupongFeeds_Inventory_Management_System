@@ -58,14 +58,14 @@
             panel1.Controls.Add(panel3);
             panel1.Location = new Point(30, 22);
             panel1.Name = "panel1";
-            panel1.Size = new Size(985, 633);
+            panel1.Size = new Size(985, 585);
             panel1.TabIndex = 42;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(69, 221);
+            label3.Location = new Point(69, 208);
             label3.Name = "label3";
             label3.Size = new Size(159, 32);
             label3.TabIndex = 4;
@@ -86,7 +86,7 @@
             button3.BackColor = Color.Black;
             button3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(806, 578);
+            button3.Location = new Point(806, 525);
             button3.Name = "button3";
             button3.Size = new Size(115, 42);
             button3.TabIndex = 2;
@@ -99,7 +99,7 @@
             button2.BackColor = Color.Black;
             button2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(659, 578);
+            button2.Location = new Point(662, 525);
             button2.Name = "button2";
             button2.Size = new Size(115, 42);
             button2.TabIndex = 1;
@@ -121,9 +121,9 @@
             panel3.Controls.Add(label6);
             panel3.Controls.Add(label5);
             panel3.Controls.Add(label4);
-            panel3.Location = new Point(69, 268);
+            panel3.Location = new Point(69, 256);
             panel3.Name = "panel3";
-            panel3.Size = new Size(852, 295);
+            panel3.Size = new Size(852, 263);
             panel3.TabIndex = 7;
             // 
             // label9
@@ -138,7 +138,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(28, 213);
+            label8.Location = new Point(24, 194);
             label8.Name = "label8";
             label8.Size = new Size(802, 15);
             label8.TabIndex = 9;
@@ -158,7 +158,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(28, 20);
+            label6.Location = new Point(24, 20);
             label6.Name = "label6";
             label6.Size = new Size(67, 21);
             label6.TabIndex = 7;
@@ -168,7 +168,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(28, 238);
+            label5.Location = new Point(24, 221);
             label5.Name = "label5";
             label5.Size = new Size(131, 21);
             label5.TabIndex = 6;
@@ -178,7 +178,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(27, 186);
+            label4.Location = new Point(24, 173);
             label4.Name = "label4";
             label4.Size = new Size(105, 21);
             label4.TabIndex = 5;
@@ -188,7 +188,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1370, 749);
+            ClientSize = new Size(1103, 610);
             Controls.Add(panel1);
             Name = "Receipt";
             Text = "Receipt";

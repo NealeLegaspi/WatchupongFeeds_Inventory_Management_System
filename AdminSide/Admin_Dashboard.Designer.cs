@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             label1 = new Label();
             chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             dataGridView1 = new DataGridView();
@@ -61,25 +61,27 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(63, 46);
+            label1.Location = new Point(44, 28);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(122, 48);
+            label1.Size = new Size(82, 32);
             label1.TabIndex = 0;
             label1.Text = "Home";
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            chart1.Legends.Add(legend1);
-            chart1.Location = new Point(53, 152);
+            chartArea2.Name = "ChartArea1";
+            chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            chart1.Legends.Add(legend2);
+            chart1.Location = new Point(37, 91);
+            chart1.Margin = new Padding(2, 2, 2, 2);
             chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            chart1.Series.Add(series1);
-            chart1.Size = new Size(450, 325);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            chart1.Series.Add(series2);
+            chart1.Size = new Size(315, 195);
             chart1.TabIndex = 1;
             chart1.Text = "chart1";
             // 
@@ -87,11 +89,10 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { CustomerID_Admin, ProductID_Admin, Column1, Payment_Admin, DateTime_Admin, Column2, OrderStatus_Admin });
-            dataGridView1.Location = new Point(42, 551);
-            dataGridView1.Margin = new Padding(4, 5, 4, 5);
+            dataGridView1.Location = new Point(29, 331);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1103, 394);
+            dataGridView1.Size = new Size(772, 236);
             dataGridView1.TabIndex = 2;
             // 
             // CustomerID_Admin
@@ -147,10 +148,11 @@
             // 
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Columns.AddRange(new DataGridViewColumn[] { Column3, Column4 });
-            dataGridView2.Location = new Point(1172, 551);
+            dataGridView2.Location = new Point(820, 331);
+            dataGridView2.Margin = new Padding(2, 2, 2, 2);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 62;
-            dataGridView2.Size = new Size(381, 394);
+            dataGridView2.Size = new Size(267, 236);
             dataGridView2.TabIndex = 3;
             // 
             // Column3
@@ -171,10 +173,11 @@
             // 
             dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView3.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2 });
-            dataGridView3.Location = new Point(1172, 175);
+            dataGridView3.Location = new Point(820, 105);
+            dataGridView3.Margin = new Padding(2, 2, 2, 2);
             dataGridView3.Name = "dataGridView3";
             dataGridView3.RowHeadersWidth = 62;
-            dataGridView3.Size = new Size(381, 305);
+            dataGridView3.Size = new Size(267, 183);
             dataGridView3.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn1
@@ -195,9 +198,10 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(53, 109);
+            label2.Location = new Point(37, 65);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(174, 32);
+            label2.Size = new Size(118, 21);
             label2.TabIndex = 5;
             label2.Text = "Total Revenue";
             // 
@@ -205,9 +209,10 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(1172, 129);
+            label3.Location = new Point(820, 77);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(128, 32);
+            label3.Size = new Size(87, 21);
             label3.TabIndex = 6;
             label3.Text = "Low Stock";
             // 
@@ -215,9 +220,10 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(53, 512);
+            label4.Location = new Point(37, 307);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(171, 32);
+            label4.Size = new Size(113, 21);
             label4.TabIndex = 7;
             label4.Text = "Order History";
             // 
@@ -225,17 +231,18 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(1172, 512);
+            label5.Location = new Point(820, 307);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(165, 32);
+            label5.Size = new Size(109, 21);
             label5.TabIndex = 8;
             label5.Text = "Top Products";
             // 
             // Admin_Dashboard
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1576, 1045);
+            ClientSize = new Size(1119, 666);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -246,7 +253,6 @@
             Controls.Add(chart1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 5, 4, 5);
             Name = "Admin_Dashboard";
             Text = "Admin_Dashboard";
             ((System.ComponentModel.ISupportInitialize)chart1).EndInit();

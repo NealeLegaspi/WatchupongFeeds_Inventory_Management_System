@@ -94,7 +94,6 @@
             btnHome.TabIndex = 26;
             btnHome.Text = "Home";
             btnHome.UseVisualStyleBackColor = false;
-            btnHome.Click += btnHome_Click;
             // 
             // label2
             // 
@@ -102,7 +101,7 @@
             label2.BackColor = Color.Black;
             label2.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(76, 217);
+            label2.Location = new Point(95, 218);
             label2.Name = "label2";
             label2.Size = new Size(93, 25);
             label2.TabIndex = 25;
@@ -112,7 +111,7 @@
             // 
             pictureBox3.BackColor = Color.Black;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(76, 124);
+            pictureBox3.Location = new Point(95, 118);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(93, 81);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -134,7 +133,7 @@
             label1.BackColor = Color.Black;
             label1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(76, 20);
+            label1.Location = new Point(49, 20);
             label1.Name = "label1";
             label1.Size = new Size(182, 25);
             label1.TabIndex = 30;

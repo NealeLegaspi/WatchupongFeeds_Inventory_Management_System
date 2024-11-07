@@ -45,11 +45,10 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { CustomerID_Admin, ProductID_Admin, Payment_Admin, DateTime_Admin, OrderStatus_Admin, TotalAmount_Admin });
-            dataGridView1.Location = new Point(38, 171);
-            dataGridView1.Margin = new Padding(4, 5, 4, 5);
+            dataGridView1.Location = new Point(27, 103);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1493, 845);
+            dataGridView1.Size = new Size(1045, 507);
             dataGridView1.TabIndex = 0;
             // 
             // CustomerID_Admin
@@ -96,19 +95,17 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(1010, 88);
-            textBox1.Margin = new Padding(4, 5, 4, 5);
+            textBox1.Location = new Point(707, 53);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(430, 46);
+            textBox1.Size = new Size(302, 29);
             textBox1.TabIndex = 1;
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(1450, 88);
-            btnSearch.Margin = new Padding(4, 5, 4, 5);
+            btnSearch.Location = new Point(1015, 53);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(81, 48);
+            btnSearch.Size = new Size(57, 29);
             btnSearch.TabIndex = 2;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = true;
@@ -118,24 +115,22 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(39, 60);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(27, 36);
             label1.Name = "label1";
-            label1.Size = new Size(314, 65);
+            label1.Size = new Size(212, 45);
             label1.TabIndex = 3;
             label1.Text = "Order History";
             // 
             // Admin_OrderHistory
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1576, 1045);
+            ClientSize = new Size(1119, 666);
             Controls.Add(label1);
             Controls.Add(btnSearch);
             Controls.Add(textBox1);
             Controls.Add(dataGridView1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 5, 4, 5);
             Name = "Admin_OrderHistory";
             Text = "Admin_OrderHistory";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
