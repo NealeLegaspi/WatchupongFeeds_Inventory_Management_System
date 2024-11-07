@@ -36,9 +36,17 @@ namespace Cashier
 
         private void button3_Click(object sender, EventArgs e)
         {
-            loadform(new OrderHistory());
+            loadform(new Product());
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            loadform(new Account_Viewprofile());
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            loadform(new OrderHistory());
+        }
     }
 }

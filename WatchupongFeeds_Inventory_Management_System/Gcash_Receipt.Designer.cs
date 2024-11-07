@@ -100,6 +100,7 @@
             btnReceipt.TabIndex = 7;
             btnReceipt.Text = "Receipt";
             btnReceipt.UseVisualStyleBackColor = true;
+            btnReceipt.Click += btnReceipt_Click;
             // 
             // label5
             // 

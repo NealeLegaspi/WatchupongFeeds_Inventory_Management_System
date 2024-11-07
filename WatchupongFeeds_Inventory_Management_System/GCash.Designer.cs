@@ -124,6 +124,7 @@
             btnPay.TabIndex = 8;
             btnPay.Text = "Pay";
             btnPay.UseVisualStyleBackColor = true;
+            btnPay.Click += btnPay_Click;
             // 
             // GCash
             // 

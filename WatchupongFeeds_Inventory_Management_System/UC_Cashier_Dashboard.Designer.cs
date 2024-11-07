@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Cashier_Dashboard));
             panel1 = new Panel();
+            button6 = new Button();
+            button2 = new Button();
+            button1 = new Button();
             button3 = new Button();
             btnHomeAdmin = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
@@ -41,6 +44,9 @@
             // panel1
             // 
             panel1.BackColor = Color.Black;
+            panel1.Controls.Add(button6);
+            panel1.Controls.Add(button2);
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(button3);
             panel1.Controls.Add(btnHomeAdmin);
             panel1.Dock = DockStyle.Left;
@@ -48,6 +54,56 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(251, 749);
             panel1.TabIndex = 0;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.Black;
+            button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
+            button6.BackgroundImageLayout = ImageLayout.None;
+            button6.FlatStyle = FlatStyle.Popup;
+            button6.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button6.ForeColor = Color.White;
+            button6.ImageAlign = ContentAlignment.MiddleLeft;
+            button6.Location = new Point(0, 686);
+            button6.Name = "button6";
+            button6.Size = new Size(251, 60);
+            button6.TabIndex = 10;
+            button6.Text = "Logout";
+            button6.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Black;
+            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
+            button2.BackgroundImageLayout = ImageLayout.None;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.ImageAlign = ContentAlignment.TopLeft;
+            button2.Location = new Point(0, 488);
+            button2.Name = "button2";
+            button2.Size = new Size(251, 60);
+            button2.TabIndex = 9;
+            button2.Text = "History";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Black;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.None;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.ImageAlign = ContentAlignment.TopLeft;
+            button1.Location = new Point(3, 392);
+            button1.Name = "button1";
+            button1.Size = new Size(251, 60);
+            button1.TabIndex = 8;
+            button1.Text = "Account";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button3
             // 
@@ -58,11 +114,11 @@
             button3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
             button3.ImageAlign = ContentAlignment.TopLeft;
-            button3.Location = new Point(0, 329);
+            button3.Location = new Point(-3, 293);
             button3.Name = "button3";
             button3.Size = new Size(251, 60);
             button3.TabIndex = 7;
-            button3.Text = "     Order History";
+            button3.Text = "Product";
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
@@ -75,11 +131,11 @@
             btnHomeAdmin.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnHomeAdmin.ForeColor = Color.White;
             btnHomeAdmin.ImageAlign = ContentAlignment.MiddleLeft;
-            btnHomeAdmin.Location = new Point(3, 228);
+            btnHomeAdmin.Location = new Point(0, 199);
             btnHomeAdmin.Name = "btnHomeAdmin";
             btnHomeAdmin.Size = new Size(248, 55);
             btnHomeAdmin.TabIndex = 4;
-            btnHomeAdmin.Text = "    Home";
+            btnHomeAdmin.Text = "Home";
             btnHomeAdmin.UseVisualStyleBackColor = false;
             btnHomeAdmin.Click += btnHomeAdmin_Click;
             // 
@@ -130,5 +186,8 @@
         private Panel MainPanelCashier;
         private Button btnHomeAdmin;
         private Button button3;
+        private Button button2;
+        private Button button1;
+        private Button button6;
     }
 }

@@ -16,5 +16,12 @@ namespace Cashier
         {
             InitializeComponent();
         }
+
+        private void btnPay_Click(object sender, EventArgs e)
+        {
+            Gcash_Receipt Greceipt = new Gcash_Receipt();
+            Greceipt.Show();
+            this.Hide();
+        }
     }
 }

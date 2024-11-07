@@ -29,5 +29,16 @@ namespace Cashier
             account.Show();
             this.Hide();
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            GCash gc = new GCash();
+            gc.Show();
+        }
     }
 }

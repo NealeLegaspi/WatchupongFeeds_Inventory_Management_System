@@ -28,15 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Receipt));
-            pictureBox1 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            btnHome = new Button();
-            pictureBox3 = new PictureBox();
-            label2 = new Label();
-            btnProduct = new Button();
-            btnAccount = new Button();
-            button1 = new Button();
             panel1 = new Panel();
             label3 = new Label();
             label1 = new Label();
@@ -52,113 +43,9 @@
             label4 = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.Black;
-            pictureBox1.Location = new Point(-1, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1370, 65);
-            pictureBox1.TabIndex = 31;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.BackColor = Color.Black;
-            pictureBox4.Location = new Point(44, 93);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(256, 633);
-            pictureBox4.TabIndex = 33;
-            pictureBox4.TabStop = false;
-            // 
-            // btnHome
-            // 
-            btnHome.BackColor = SystemColors.ControlText;
-            btnHome.FlatStyle = FlatStyle.Popup;
-            btnHome.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnHome.ForeColor = Color.White;
-            btnHome.Image = (Image)resources.GetObject("btnHome.Image");
-            btnHome.ImageAlign = ContentAlignment.MiddleLeft;
-            btnHome.Location = new Point(44, 276);
-            btnHome.Name = "btnHome";
-            btnHome.Size = new Size(256, 70);
-            btnHome.TabIndex = 36;
-            btnHome.Text = "Home";
-            btnHome.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = Color.Black;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(128, 132);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(93, 81);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 37;
-            pictureBox3.TabStop = false;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Black;
-            label2.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(128, 235);
-            label2.Name = "label2";
-            label2.Size = new Size(93, 25);
-            label2.TabIndex = 38;
-            label2.Text = "Cashier";
-            // 
-            // btnProduct
-            // 
-            btnProduct.BackColor = SystemColors.ControlText;
-            btnProduct.FlatStyle = FlatStyle.Popup;
-            btnProduct.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnProduct.ForeColor = Color.White;
-            btnProduct.Image = (Image)resources.GetObject("btnProduct.Image");
-            btnProduct.ImageAlign = ContentAlignment.MiddleLeft;
-            btnProduct.Location = new Point(44, 370);
-            btnProduct.Name = "btnProduct";
-            btnProduct.Size = new Size(256, 70);
-            btnProduct.TabIndex = 39;
-            btnProduct.Text = "Product";
-            btnProduct.UseVisualStyleBackColor = false;
-            // 
-            // btnAccount
-            // 
-            btnAccount.BackColor = SystemColors.ControlText;
-            btnAccount.FlatStyle = FlatStyle.Popup;
-            btnAccount.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAccount.ForeColor = Color.White;
-            btnAccount.Image = (Image)resources.GetObject("btnAccount.Image");
-            btnAccount.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAccount.Location = new Point(44, 469);
-            btnAccount.Name = "btnAccount";
-            btnAccount.Size = new Size(256, 70);
-            btnAccount.TabIndex = 40;
-            btnAccount.Text = "Account";
-            btnAccount.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = SystemColors.ControlText;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(44, 559);
-            button1.Name = "button1";
-            button1.Size = new Size(256, 70);
-            button1.TabIndex = 41;
-            button1.Text = "History";
-            button1.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -169,7 +56,7 @@
             panel1.Controls.Add(button2);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(panel3);
-            panel1.Location = new Point(344, 93);
+            panel1.Location = new Point(30, 22);
             panel1.Name = "panel1";
             panel1.Size = new Size(985, 633);
             panel1.TabIndex = 42;
@@ -205,6 +92,7 @@
             button3.TabIndex = 2;
             button3.Text = "HOME";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -302,37 +190,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1370, 749);
             Controls.Add(panel1);
-            Controls.Add(button1);
-            Controls.Add(btnAccount);
-            Controls.Add(btnProduct);
-            Controls.Add(label2);
-            Controls.Add(pictureBox3);
-            Controls.Add(btnHome);
-            Controls.Add(pictureBox4);
-            Controls.Add(pictureBox1);
             Name = "Receipt";
             Text = "Receipt";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox4;
-        private Button btnHome;
-        private PictureBox pictureBox3;
-        private Label label2;
-        private Button btnProduct;
-        private Button btnAccount;
-        private Button button1;
         private Panel panel1;
         private Button button3;
         private Button button2;

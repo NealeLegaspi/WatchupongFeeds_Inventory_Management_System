@@ -16,5 +16,12 @@ namespace Cashier
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            UC_Cashier_Dashboard UCcd = new UC_Cashier_Dashboard();
+            UCcd.Show();
+            this.Hide();
+        }
     }
 }

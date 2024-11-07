@@ -16,5 +16,12 @@ namespace Cashier
         {
             InitializeComponent();
         }
+
+        private void btnReceipt_Click(object sender, EventArgs e)
+        {
+            Receipt receipt = new Receipt();
+            receipt.Show();
+            this.Hide();
+        }
     }
 }
