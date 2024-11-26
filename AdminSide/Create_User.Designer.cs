@@ -28,47 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            radioButton2 = new RadioButton();
-            radioButton1 = new RadioButton();
+            RBfmale = new RadioButton();
+            RBmale = new RadioButton();
             button2 = new Button();
             button1 = new Button();
-            textBox5 = new TextBox();
+            txtDoB = new TextBox();
             label7 = new Label();
             label6 = new Label();
-            textBox4 = new TextBox();
+            txtcontact = new TextBox();
             label5 = new Label();
-            textBox3 = new TextBox();
+            txtemail = new TextBox();
             label4 = new Label();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txtlast = new TextBox();
+            txtfirst = new TextBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             SuspendLayout();
             // 
-            // radioButton2
+            // RBfmale
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            radioButton2.Location = new Point(291, 415);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(67, 21);
-            radioButton2.TabIndex = 32;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Female";
-            radioButton2.UseVisualStyleBackColor = true;
+            RBfmale.AutoSize = true;
+            RBfmale.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            RBfmale.Location = new Point(291, 415);
+            RBfmale.Name = "RBfmale";
+            RBfmale.Size = new Size(67, 21);
+            RBfmale.TabIndex = 32;
+            RBfmale.TabStop = true;
+            RBfmale.Text = "Female";
+            RBfmale.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // RBmale
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            radioButton1.Location = new Point(234, 415);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(55, 21);
-            radioButton1.TabIndex = 31;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Male";
-            radioButton1.UseVisualStyleBackColor = true;
+            RBmale.AutoSize = true;
+            RBmale.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            RBmale.Location = new Point(234, 415);
+            RBmale.Name = "RBmale";
+            RBmale.Size = new Size(55, 21);
+            RBmale.TabIndex = 31;
+            RBmale.TabStop = true;
+            RBmale.Text = "Male";
+            RBmale.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -79,6 +79,7 @@
             button2.TabIndex = 30;
             button2.Text = "Create";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -91,13 +92,13 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // textBox5
+            // txtDoB
             // 
-            textBox5.Location = new Point(42, 408);
-            textBox5.Multiline = true;
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(159, 34);
-            textBox5.TabIndex = 28;
+            txtDoB.Location = new Point(42, 408);
+            txtDoB.Multiline = true;
+            txtDoB.Name = "txtDoB";
+            txtDoB.Size = new Size(159, 34);
+            txtDoB.TabIndex = 28;
             // 
             // label7
             // 
@@ -119,13 +120,13 @@
             label6.TabIndex = 26;
             label6.Text = "Date of Birth";
             // 
-            // textBox4
+            // txtcontact
             // 
-            textBox4.Location = new Point(42, 320);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(324, 34);
-            textBox4.TabIndex = 25;
+            txtcontact.Location = new Point(42, 320);
+            txtcontact.Multiline = true;
+            txtcontact.Name = "txtcontact";
+            txtcontact.Size = new Size(324, 34);
+            txtcontact.TabIndex = 25;
             // 
             // label5
             // 
@@ -137,13 +138,13 @@
             label5.TabIndex = 24;
             label5.Text = "Contact No.";
             // 
-            // textBox3
+            // txtemail
             // 
-            textBox3.Location = new Point(42, 226);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(324, 34);
-            textBox3.TabIndex = 23;
+            txtemail.Location = new Point(42, 226);
+            txtemail.Multiline = true;
+            txtemail.Name = "txtemail";
+            txtemail.Size = new Size(324, 34);
+            txtemail.TabIndex = 23;
             // 
             // label4
             // 
@@ -155,21 +156,21 @@
             label4.TabIndex = 22;
             label4.Text = "Email";
             // 
-            // textBox2
+            // txtlast
             // 
-            textBox2.Location = new Point(42, 130);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(159, 34);
-            textBox2.TabIndex = 21;
+            txtlast.Location = new Point(42, 130);
+            txtlast.Multiline = true;
+            txtlast.Name = "txtlast";
+            txtlast.Size = new Size(159, 34);
+            txtlast.TabIndex = 21;
             // 
-            // textBox1
+            // txtfirst
             // 
-            textBox1.Location = new Point(220, 130);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(180, 34);
-            textBox1.TabIndex = 20;
+            txtfirst.Location = new Point(220, 130);
+            txtfirst.Multiline = true;
+            txtfirst.Name = "txtfirst";
+            txtfirst.Size = new Size(180, 34);
+            txtfirst.TabIndex = 20;
             // 
             // label3
             // 
@@ -205,20 +206,20 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(439, 511);
-            Controls.Add(radioButton2);
-            Controls.Add(radioButton1);
+            ClientSize = new Size(438, 516);
+            Controls.Add(RBfmale);
+            Controls.Add(RBmale);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(textBox5);
+            Controls.Add(txtDoB);
             Controls.Add(label7);
             Controls.Add(label6);
-            Controls.Add(textBox4);
+            Controls.Add(txtcontact);
             Controls.Add(label5);
-            Controls.Add(textBox3);
+            Controls.Add(txtemail);
             Controls.Add(label4);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtlast);
+            Controls.Add(txtfirst);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -230,19 +231,19 @@
 
         #endregion
 
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
+        private RadioButton RBfmale;
+        private RadioButton RBmale;
         private Button button2;
         private Button button1;
-        private TextBox textBox5;
+        private TextBox txtDoB;
         private Label label7;
         private Label label6;
-        private TextBox textBox4;
+        private TextBox txtcontact;
         private Label label5;
-        private TextBox textBox3;
+        private TextBox txtemail;
         private Label label4;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtlast;
+        private TextBox txtfirst;
         private Label label3;
         private Label label2;
         private Label label1;
