@@ -48,5 +48,11 @@ namespace Cashier
         {
             loadform(new OrderHistory());
         }
+
+        private void UC_Cashier_Dashboard_Load(object sender, EventArgs e)
+        {
+            Cashier_Dashboard cashier = new Cashier_Dashboard();
+            MainPanelCashier.Controls.Add(cashier);
+        }
     }
 }

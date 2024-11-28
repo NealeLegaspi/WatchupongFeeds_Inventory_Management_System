@@ -68,5 +68,12 @@ namespace AdminSide
             Logout.Show();
             this.Hide();
         }
+
+        private void UC_Admin_Dashboard_Load(object sender, EventArgs e)
+        {
+            AdminDashboard admin = new AdminDashboard();
+            mainPanel.Controls.Add(admin);
+
+        }
     }
 }

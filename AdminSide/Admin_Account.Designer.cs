@@ -50,11 +50,13 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 27.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(34, 45);
+            label1.Location = new Point(49, 75);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(157, 50);
+            label1.Size = new Size(236, 74);
             label1.TabIndex = 0;
             label1.Text = "Account";
+            label1.Click += label1_Click;
             // 
             // btnADDUSER
             // 
@@ -62,9 +64,10 @@
             btnADDUSER.FlatStyle = FlatStyle.Popup;
             btnADDUSER.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnADDUSER.ForeColor = SystemColors.Control;
-            btnADDUSER.Location = new Point(899, 45);
+            btnADDUSER.Location = new Point(1284, 75);
+            btnADDUSER.Margin = new Padding(4, 5, 4, 5);
             btnADDUSER.Name = "btnADDUSER";
-            btnADDUSER.Size = new Size(153, 40);
+            btnADDUSER.Size = new Size(219, 67);
             btnADDUSER.TabIndex = 2;
             btnADDUSER.Text = "Add User";
             btnADDUSER.UseVisualStyleBackColor = false;
@@ -75,9 +78,11 @@
             dataGridView1.AllowUserToOrderColumns = true;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { NameAdmin, UsernameAdmin, emailAdmin, Phone, DateOfBirth, Gender, RoleAdmin, StatusAdmin, ActionAdmin });
-            dataGridView1.Location = new Point(34, 98);
+            dataGridView1.Location = new Point(49, 163);
+            dataGridView1.Margin = new Padding(4, 5, 4, 5);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(1018, 478);
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.Size = new Size(1454, 797);
             dataGridView1.TabIndex = 3;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -87,60 +92,73 @@
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
             NameAdmin.DefaultCellStyle = dataGridViewCellStyle1;
             NameAdmin.HeaderText = "Name";
+            NameAdmin.MinimumWidth = 8;
             NameAdmin.Name = "NameAdmin";
             // 
             // UsernameAdmin
             // 
             UsernameAdmin.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             UsernameAdmin.HeaderText = "Username";
+            UsernameAdmin.MinimumWidth = 8;
             UsernameAdmin.Name = "UsernameAdmin";
             // 
             // emailAdmin
             // 
             emailAdmin.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             emailAdmin.HeaderText = "E-MAIL";
+            emailAdmin.MinimumWidth = 8;
             emailAdmin.Name = "emailAdmin";
             // 
             // Phone
             // 
             Phone.HeaderText = "Phone No.";
+            Phone.MinimumWidth = 8;
             Phone.Name = "Phone";
+            Phone.Width = 150;
             // 
             // DateOfBirth
             // 
             DateOfBirth.HeaderText = "Date of Birth";
+            DateOfBirth.MinimumWidth = 8;
             DateOfBirth.Name = "DateOfBirth";
+            DateOfBirth.Width = 150;
             // 
             // Gender
             // 
             Gender.HeaderText = "Gender";
+            Gender.MinimumWidth = 8;
             Gender.Name = "Gender";
+            Gender.Width = 150;
             // 
             // RoleAdmin
             // 
             RoleAdmin.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             RoleAdmin.HeaderText = "Role";
+            RoleAdmin.MinimumWidth = 8;
             RoleAdmin.Name = "RoleAdmin";
             // 
             // StatusAdmin
             // 
             StatusAdmin.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             StatusAdmin.HeaderText = "Status";
+            StatusAdmin.MinimumWidth = 8;
             StatusAdmin.Name = "StatusAdmin";
             // 
             // ActionAdmin
             // 
             ActionAdmin.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             ActionAdmin.HeaderText = "Actions";
+            ActionAdmin.MinimumWidth = 8;
             ActionAdmin.Name = "ActionAdmin";
             // 
             // button1
             // 
             button1.BackColor = Color.Lime;
             button1.FlatStyle = FlatStyle.Popup;
-            button1.Location = new Point(948, 124);
+            button1.Location = new Point(1354, 207);
+            button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
-            button1.Size = new Size(32, 20);
+            button1.Size = new Size(46, 33);
             button1.TabIndex = 4;
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
@@ -149,24 +167,26 @@
             // 
             button2.BackColor = Color.Red;
             button2.FlatStyle = FlatStyle.Popup;
-            button2.Location = new Point(1002, 124);
+            button2.Location = new Point(1431, 207);
+            button2.Margin = new Padding(4, 5, 4, 5);
             button2.Name = "button2";
-            button2.Size = new Size(32, 20);
+            button2.Size = new Size(46, 33);
             button2.TabIndex = 5;
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // Admin_Account
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1119, 666);
+            ClientSize = new Size(1599, 1106);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(dataGridView1);
             Controls.Add(btnADDUSER);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Admin_Account";
             SizeGripStyle = SizeGripStyle.Show;
             Text = "Admin_Account";
